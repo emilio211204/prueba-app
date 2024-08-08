@@ -3,12 +3,12 @@ import { Text, View, TextInput, Button } from 'react-native';
 import { styles } from '../../theme/appTheme';
 
 export const Screen4 = () => {
-  const [numero1, setNumero1] = useState('');
-  const [numero2, setNumero2] = useState('');
-  const [resultado, setResultado] = useState('');
+  const [n1, setNumero1] = useState('');
+  const [n2, setNumero2] = useState('');
+  const [res, setResultado] = useState('');
 
-  const handleButtonPress = () => {
-    const numeroMayorOIgual = Math.max(parseInt(numero1), parseInt(numero2));
+  const ButtonClick = () => {
+    const numeroMayorOIgual = Math.max(parseInt(n1), parseInt(n2));
     setResultado(numeroMayorOIgual.toString());
   };
 
@@ -17,20 +17,20 @@ export const Screen4 = () => {
       <TextInput
         style={styles.containerInput}
         onChangeText={setNumero1}
-        value={numero1}
+        value={n1}
         keyboardType="numeric"
         placeholder="Coloca el primer número"
       />
       <TextInput
         style={styles.containerInput}
         onChangeText={setNumero2}
-        value={numero2}
+        value={n2}
         keyboardType="numeric"
         placeholder="Coloca el segundo número"
       />
-      <Button  title=">= " onPress={handleButtonPress} /> 
+      <Button  title=">= " onPress={ButtonClick} /> 
       <Text style={styles.textImg}>El numero mayor es:</Text>
-      <Text style={styles.textResultado}>{resultado}</Text>
+      <Text style={styles.textResultado}>{res}</Text>
     </View>
   );
 };

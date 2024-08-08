@@ -7,29 +7,29 @@ import { styles } from '../../theme/appTheme';
 export const Screnn1 = () => {
   const navigation = useNavigation() as any;
 
-  const handleImage1Press = () => {
+  const Image1 = () => {
     navigation.navigate('Imagen1');
   };
 
-  const handleImage2Press = () => {
+  const Image2 = () => {
     navigation.navigate('Imagen2');
   };
 
-  const handleButtonPress = () => {
+  const Button = () => {
     navigation.navigate('Mayor Igual');
   };
 
-  const handleButton2Press = () => {    
+  const Button2 = () => {    
     navigation.navigate('Menor Igual');
   };
 
   return (
     <View >
       <Text style={styles.textImg}>Bienvenido</Text>
-      <ButtonComponent title="Imagen 1" onPress={handleImage1Press} />
-      <ButtonComponent title="Imagen 2" onPress={handleImage2Press} />
-      <ButtonComponent title=">=" onPress={handleButtonPress} />
-      <ButtonComponent title="<=" onPress={handleButton2Press} />
+      <ButtonComponent title="Imagen 1" onPress={Image1} />
+      <ButtonComponent title="Imagen 2" onPress={Image2} />
+      <ButtonComponent title=">=" onPress={Button} />
+      <ButtonComponent title="<=" onPress={Button2} />
     </View>
   );
 };
