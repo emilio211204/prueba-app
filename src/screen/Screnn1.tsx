@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { styles } from '../../theme/appTheme';
 
 export const Screnn1 = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation() as any;
 
   const handleImage1Press = () => {
     navigation.navigate('Imagen1');
