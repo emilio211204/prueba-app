@@ -1,11 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-   container: {
-      flex: 1, 
-      alignItems: 'center', 
-      justifyContent: 'center'
-   },
+
    button: {
     backgroundColor: '#09a9a6',
     paddingVertical: 10,
@@ -29,6 +25,7 @@ textImg: {
   fontSize: 18,
   textTransform: 'uppercase',
   textAlign: 'center',
+  marginTop: 20
 },
 
 img1: {

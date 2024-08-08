@@ -24,7 +24,7 @@ export const Screnn1 = () => {
   };
 
   return (
-    <View>
+    <View >
       <Text style={styles.textImg}>Bienvenido</Text>
       <ButtonComponent title="Imagen 1" onPress={handleImage1Press} />
       <ButtonComponent title="Imagen 2" onPress={handleImage2Press} />
