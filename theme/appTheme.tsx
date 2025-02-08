@@ -1,56 +1,55 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-
    button: {
-    backgroundColor: '#09a9a6',
-    paddingVertical: 10,
-    borderRadius: 10,
+    backgroundColor: '#3b82f6',
+    paddingVertical: 12,
+    borderRadius: 12,
     alignItems: 'center',
-    marginTop: 20,
-    marginBottom: 20,
-    width: '50%',
+    marginTop: 25,
+    marginBottom: 25,
+    width: '60%',
     alignSelf: 'center'
-},
-buttonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 18,
+  },
+  
+  buttonText: {
+    color: '#f5f5f5',
+    fontWeight: '700',
+    fontSize: 20,
     textTransform: 'uppercase',
-},
+  },
 
-textImg: {
-  color: 'black',
-  fontWeight: 'bold',
-  fontSize: 18,
-  textTransform: 'uppercase',
-  textAlign: 'center',
-  marginTop: 20
-},
+  textImg: {
+    color: '#333',
+    fontWeight: 'bold',
+    fontSize: 20,
+    textTransform: 'uppercase',
+    textAlign: 'center',
+    marginTop: 30
+  },
 
-img1: {
-  width: 400,
-  height: 200,
-  alignSelf: 'center',
-  marginTop: 200
-},
+  img1: {
+    width: 350,
+    height: 180,
+    alignSelf: 'center',
+    marginTop: 150
+  },
 
-textResultado: {
-  color: 'black',
-  fontWeight: 'bold',
-  fontSize: 18,
-  textTransform: 'uppercase',
-  textAlign: 'center',
-},
+  textResultado: {
+    color: '#444',
+    fontWeight: 'bold',
+    fontSize: 20,
+    textTransform: 'uppercase',
+    textAlign: 'center',
+  },
 
-containerInput: {
-  flexDirection: 'row',
-  height: 40, 
-  borderColor: 'gray', 
-  borderWidth: 1,
-  margin: 10,
-  borderRadius: 10
-},
-
-
-})
+  containerInput: {
+    flexDirection: 'row',
+    height: 45,
+    borderColor: '#d1d5db',
+    borderWidth: 1.5,
+    margin: 12,
+    borderRadius: 12,
+    paddingLeft: 10,
+  },
+});

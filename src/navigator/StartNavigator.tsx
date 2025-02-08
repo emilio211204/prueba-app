@@ -3,7 +3,7 @@ import { Screnn1 } from '../screen/Screnn1';
 import { Screen2 } from '../screen/Screen2';
 import { Screen3 } from '../screen/Screen3';
 import { Screen5 } from '../screen/Screen5';
-import { Screen4 } from '../screen/Screen4';
+import { Screen4 } from '../screen/Screen4'; 
 const Stack = createStackNavigator();
 
 export const StartNavigator = ()  => {
